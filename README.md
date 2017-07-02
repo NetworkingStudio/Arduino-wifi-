@@ -18,7 +18,7 @@ Webpage:
 Home heating support system 
 
  Modifyed: 24 April, 2017 
- by DD. (Daniel)
+ by D. (Dan: Networking Studio) https://github.com/NetworkingStudio/Arduino-wifi- 
 
  */
 
@@ -123,9 +123,7 @@ void loop() {
             client.print("Press AUTO for Home Heatting Support Automatically ");
             client.print("<form action='/AUTO' method='GET'>");
             client.print("<button type='submit'>AUTO</button>");
-            client.print("</form>"); //website
-
-            client.print("</form>"); //
+            client.print("</form>"); //websit           client.print("</form>"); //
 
             client.print("Room temperature is ! ");
             
@@ -155,7 +153,7 @@ void loop() {
              client.print(hif);
            client.println(" *Input Values");
             
-           // client.print("Network Studio 2017");
+            client.print("Network Studio 2017");
 
             
             // HTML Document type
@@ -178,7 +176,7 @@ void loop() {
             Serial.print(" is ");
            Serial.print(sensorReading);
             client.println("<c />");
-            //client.println("<meta http-equiv=refresh content=1;URL='//192.168.1.10/AUTO'"); // Refresh main website
+            //client.println("<meta http-equiv=refresh content=1;URL='//192.xxx.xxx.xxx/AUTO'"); // Refresh main website
                         
           }
           //HTTP response ends with a blank line
